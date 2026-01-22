@@ -302,4 +302,110 @@ font-size:18px;
 }
 
 }
+/* =========================
+   MEJORA PROFESIONAL MÓVIL
+   ========================= */
+@media (max-width: 768px){
 
+/* HEADER */
+.header{
+    padding:15px 20px;
+}
+
+.logo-area{
+    flex-direction:column;
+    text-align:center;
+}
+
+.logo-text{
+    font-size:13px;
+}
+
+/* TEL */
+.tel-sticky{
+    text-align:center;
+    padding:10px 15px;
+    font-size:14px;
+}
+
+/* HERO */
+.hero-overlay{
+    padding:60px 20px;
+}
+
+.hero-content{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:35px;
+}
+
+.hero-texto h1{
+    font-size:26px;
+    line-height:1.3;
+}
+
+.hero-texto p{
+    font-size:15px;
+}
+
+.linea-dorada{
+    margin:15px auto;
+}
+
+/* LISTAS */
+.lista{
+    padding-left:0;
+}
+
+.lista li{
+    list-style:none;
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+/* FOTO */
+.foto-contadora{
+    text-align:center;
+}
+
+.foto-contadora img{
+    width:220px;
+    max-width:100%;
+}
+
+.datos-contadora{
+    font-size:13px;
+}
+
+/* SECCIONES */
+.seccion{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.seccion h2{
+    font-size:24px;
+}
+
+/* FLOTANTE */
+.flotante{
+    margin-top:-50px;
+    padding:40px 25px;
+}
+
+/* FOOTER */
+.footer{
+    padding:50px 20px;
+}
+
+.redes a{
+    display:block;
+    margin:12px 0;
+    font-size:15px;
+}
+
+.slogan{
+    font-size:18px;
+}
+}
