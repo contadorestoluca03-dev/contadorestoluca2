@@ -131,10 +131,17 @@ font-size:28px;
 margin-bottom:10px
 }
 
+/* =========================
+   🔥 TEXTO DESTACADO (ÚNICO CAMBIO)
+   ========================= */
 .destacado{
-color:#d4af37;
+background:rgba(255,255,255,0.12);
+color:#ffffff;
 font-weight:bold;
-margin:20px 0
+padding:15px 20px;
+border-left:5px solid #d4af37;
+margin:25px 0;
+border-radius:6px
 }
 
 /* FLOTANTE */
@@ -189,13 +196,12 @@ flex-direction:column;
 margin-top:30px
 }
 }
+
 /* =========================
    OPTIMIZACIÓN MÓVIL
    ========================= */
-
 @media (max-width: 768px){
 
-/* HEADER */
 .header{
 padding:15px 20px;
 }
@@ -209,14 +215,12 @@ text-align:center;
 font-size:13px;
 }
 
-/* TEL STICKY */
 .tel-sticky{
 padding:10px 20px;
 text-align:center;
 font-size:14px;
 }
 
-/* HERO */
 .hero-overlay{
 padding:60px 20px;
 }
@@ -244,7 +248,6 @@ font-size:15px;
 margin:15px auto;
 }
 
-/* LISTAS */
 .lista{
 padding-left:0;
 text-align:left;
@@ -256,7 +259,6 @@ margin:15px auto 0;
 margin-left:20px;
 }
 
-/* FOTO CONTADORA */
 .foto-contadora{
 flex:unset;
 text-align:center;
@@ -271,7 +273,6 @@ max-width:100%;
 font-size:13px;
 }
 
-/* SECCIONES */
 .seccion{
 padding:60px 20px;
 text-align:center;
@@ -281,13 +282,11 @@ text-align:center;
 font-size:24px;
 }
 
-/* FLOTANTE */
 .flotante{
 padding:40px 20px;
 margin-top:-60px;
 }
 
-/* FOOTER */
 .footer{
 padding:60px 20px;
 }
@@ -300,112 +299,76 @@ margin:15px 0;
 .slogan{
 font-size:18px;
 }
-
 }
+
 /* =========================
    MEJORA PROFESIONAL MÓVIL
    ========================= */
 @media (max-width: 768px){
 
-/* HEADER */
-.header{
-    padding:15px 20px;
-}
-
-.logo-area{
-    flex-direction:column;
-    text-align:center;
-}
-
-.logo-text{
-    font-size:13px;
-}
-
-/* TEL */
-.tel-sticky{
-    text-align:center;
-    padding:10px 15px;
-    font-size:14px;
-}
-
-/* HERO */
-.hero-overlay{
-    padding:60px 20px;
-}
-
-.hero-content{
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    gap:35px;
-}
-
-.hero-texto h1{
-    font-size:26px;
-    line-height:1.3;
-}
-
-.hero-texto p{
-    font-size:15px;
-}
-
-.linea-dorada{
-    margin:15px auto;
-}
-
-/* LISTAS */
-.lista{
-    padding-left:0;
-}
-
 .lista li{
-    list-style:none;
-    margin-bottom:10px;
-    font-size:14px;
+list-style:none;
+margin-bottom:10px;
+font-size:14px;
 }
 
-/* FOTO */
-.foto-contadora{
-    text-align:center;
-}
-
-.foto-contadora img{
-    width:220px;
-    max-width:100%;
-}
-
-.datos-contadora{
-    font-size:13px;
-}
-
-/* SECCIONES */
-.seccion{
-    padding:60px 20px;
-    text-align:center;
-}
-
-.seccion h2{
-    font-size:24px;
-}
-
-/* FLOTANTE */
 .flotante{
-    margin-top:-50px;
-    padding:40px 25px;
+margin-top:-50px;
+padding:40px 25px;
+}
+}
+/* =========================
+   RESALTADO HERO PRINCIPAL
+   ========================= */
+.hero-texto{
+background:rgba(0,0,0,0.55);
+padding:30px 35px;
+border-left:6px solid #d4af37;
+border-radius:10px;
 }
 
-/* FOOTER */
-.footer{
-    padding:50px 20px;
+/* Refuerzo del título principal */
+.hero-texto h1{
+color:#ffffff;
+text-shadow:0 2px 8px rgba(0,0,0,0.6);
 }
 
-.redes a{
-    display:block;
-    margin:12px 0;
-    font-size:15px;
+/* Refuerzo del texto */
+.hero-texto p{
+color:#f1f1f1;
+font-size:16px;
 }
 
-.slogan{
-    font-size:18px;
+/* MÓVIL */
+@media (max-width:768px){
+.hero-texto{
+padding:25px 20px;
+border-left:none;
+border-top:4px solid #d4af37;
 }
 }
+/* =========================
+   RESALTADO DE PÁRRAFOS CLAVE
+   ========================= */
+.parrafo-destacado{
+color:#ffffff;
+font-size:17px;
+font-weight:500;
+line-height:1.8;
+text-shadow:0 1px 6px rgba(0,0,0,0.5);
+border-left:4px solid #d4af37;
+padding-left:15px;
+margin-bottom:18px;
+}
+
+/* MÓVIL */
+@media (max-width:768px){
+.parrafo-destacado{
+font-size:16px;
+border-left:none;
+border-top:3px solid #d4af37;
+padding-left:0;
+padding-top:12px;
+}
+}
+
